@@ -1,0 +1,42 @@
+$sudo yarn create react-app app-gobarber-frontend
+$sudo yarn add eslint -D
+$sudo yarn eslint --init
+$sudo yarn add prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-react-hooks -D
+
+$sudo yarn add react-router-dom
+$sudo yarn add history
+$sudo yarn add customize-cra react-app-rewired -D
+$sudo yarn add babel-plugin-root-import -D
+
+## dentro do package.json trocar:#####
+
+"scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+
+
+######################################
+ 
+
+$sudo yarn add eslint-import-resolver-babel-plugin-root-import -D
+$sudo yarn add polished
+$sudo yarn add @rocketseat/unform
+$sudo yarn add yup
+$sudo yarn add redux redux-saga react-redux reactotron-redux reactotron-redux-saga immer
+
+$sudo yarn add redux-persist
+$sudo yarn add react-toastify
+$sudo yarn add react-perfect-scrollbar
+$sudo yarn add date-fns@next
+$sudo yarn add date-fns-tz
+$sudo yarn add eslint-plugin-react-hooks@next
+
+
+
+
+
+
+$sudo yarn add redux-persist react-toastify react-perfect-scrollbar date-fns@next date-fns-tz

@@ -1,0 +1,55 @@
+$ sudo yarn global add expo-cli
+$ sudo npm -g uninstall expo-cli --save
+
+$code .zshrc
+
+#Adding the install location to your PATH
+#ADD as seguintes linhas dentro do arquivo .zshrc
+
+export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$(yarn global bin):$PATH
+=====================================
+ou
+
+$export PATH="$(yarn global bin):$PATH"
+
+###criar o projeto
+$sudo expo init mobile
+->blank
+->y
+
+$cd mobile
+$yarn start
+$sudo expo start
+
+$sudo rm -rf ./.expo 
+$sudo expo start --no-dev --minify
+
+======================================
+$ sudo yarn add eslint-plugin-import-helpers jetifier -D
+$sudo yarn add babel-plugin-root-import eslint-import-resolver-babel-plugin-root-import -D
+$sudo yarn add eslint -D
+$sudo yarn eslint --init
+$sudo yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
+$sudo yarn add -D eslint prettier @typescript-esli
+nt/eslint-plugin @typescript-eslint/parser
+
+$ sudo yarn add jetifier -D
+
+"scripts": {
+    "postinstall": "npx jetify"
+   ...
+}  
+
+$ sudo yarn add react-navigation react-native-gesture-handler
+$expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context
+$sudo yarn add react-navigation-stack
+$sudo expo install @react-native-community/masked-view
+$sudo expo install react-native-code-push
+$sudo expo install react-native-maps
+$sudo expo install styled-components
+$sudo expo install react-native-webview
+
